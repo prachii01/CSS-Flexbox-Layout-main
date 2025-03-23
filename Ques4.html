@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debug Navbar</title>
+</head>
+<body>
+
+<div class="navbar" style="display: flex; justify-content: space-between; align-items: center; background-color: #333; padding: 15px 30px; flex-wrap: nowrap;">
+  
+  <!-- Logo -->
+  <div class="logo" style="color: white; font-size: 24px; font-weight: bold;">Logo</div>
+  
+  <!-- Links -->
+  <div class="links" style="display: flex; gap: 30px;">
+    <a href="#" style="text-decoration: none; color: white; font-size: 18px; padding: 5px 15px; transition: 0.3s;">Home</a>
+    <a href="#" style="text-decoration: none; color: white; font-size: 18px; padding: 5px 15px; transition: 0.3s;">About</a>
+    <a href="#" style="text-decoration: none; color: white; font-size: 18px; padding: 5px 15px; transition: 0.3s;">Services</a>
+    <a href="#" style="text-decoration: none; color: white; font-size: 18px; padding: 5px 15px; transition: 0.3s;">Contact</a>
+  </div>
+
+</div>
+
+<!-- Responsive Design -->
+<style>
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .links {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+
+  /* Hover effect */
+  a:hover {
+    background: #555;
+    border-radius: 5px;
+  }
+</style>
+
+</body>
+</html>

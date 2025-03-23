@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout with Images</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        .container {
+            display: flex; 
+            justify-content: space-between;
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+
+        .box h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .items-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .item {
+            flex: 1 1 calc(50% - 15px);
+            background: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .item p {
+            margin: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .item:hover {
+            transform: scale(1.05);
+        }
+
+        .link {
+            margin-top: 15px;
+            display: inline-block;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Left Section -->
+    <div class="box">
+        <h2>Revamp your home in style</h2>
+        <div class="items-container">
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1598124146162-bd614a798ef5" alt="Cushion covers">
+                <p>Cushion covers, bedsheets & more</p>
+            </div>
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1604014237744-b55042d5decc" alt="Figurines">
+                <p>Figurines, vases & more</p>
+            </div>
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc" alt="Home storage">
+                <p>Home storage</p>
+            </div>
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2" alt="Lighting solutions">
+                <p>Lighting solutions</p>
+            </div>
+        </div>
+        <a href="#" class="link">Explore all</a>
+    </div>
+
+    <!-- Right Section -->
+    <div class="box">
+        <h2>Starting ₹149 | Headphones</h2>
+        <div class="items-container">
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90" alt="boat">
+                <p>boat - Starting ₹249 | boAt</p>
+            </div>
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1590650152022-9c59381c054b" alt="BOULT">
+                <p>BOULT - Starting ₹349 | boult</p>
+            </div>
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1525186402429-b4ff38bedec6" alt="noise">
+                <p>noise - Starting ₹649 | Noise</p>
+            </div>
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1512034705137-f180bd331c53" alt="ZEBRONICS">
+                <p>ZEBRONICS - Starting ₹149 | Zebronics</p>
+            </div>
+        </div>
+        <a href="#" class="link">See all offers</a>
+    </div>
+</div>
+
+</body>
+</html>
